@@ -30,7 +30,7 @@ function wrapText(text, x, y, lineHeight) {
       line = testLine;
     }
   }
-  b.fillText(line, x - 240, y - 240)
+  b.fillText(line, x - 240, y - 240);
 }
 
 

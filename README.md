@@ -1,2 +1,2 @@
 # Personal-website
-Using a layerd canvas to deiplay information in an interactive way.
+Using a layerd canvas to display information in an interactive way.

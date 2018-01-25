@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  background-color: rgb(199, 232, 243);
+}
+p{
+  display: none;
+}
+h1{
+  color: rgb(13, 27, 30);
+  padding-left: 20px;
+}
+h4{
+  color: rgb(13, 27, 30);
+  padding-left: 20px;
+}

@@ -6,7 +6,7 @@ var c = bubbles.getContext('2d');
 
 function distance(x1, y1, x2, y2) {
   let xDistance = x2 - x1;
-  let yDistance = y2 - y1
+  let yDistance = y2 - y1;
 
   return Math.sqrt(Math.pow(xDistance, 2) + Math.pow(yDistance, 2))
 }
@@ -68,17 +68,17 @@ var mouse = {
 
 var maxRadius = 350;
 
-var txt1 = document.getElementById('txt1').textContent
-var txt2 = document.getElementById('txt2').textContent
-var txt3 = document.getElementById('txt3').textContent
-var txt4 = document.getElementById('txt4').textContent
-var txt5 = document.getElementById('txt5').textContent
-var txt6 = document.getElementById('txt6').textContent
-var txt7 = document.getElementById('txt7').textContent
-var txt8 = document.getElementById('txt8').textContent
-var txt9 = document.getElementById('txt9').textContent
-var txt10 = document.getElementById('txt10').textContent
-var txxxt = [txt1, txt2, txt3, txt4, txt5, txt6, txt7, txt8, txt9, txt10]
+var txt1 = document.getElementById('txt1').textContent;
+var txt2 = document.getElementById('txt2').textContent;
+var txt3 = document.getElementById('txt3').textContent;
+var txt4 = document.getElementById('txt4').textContent;
+var txt5 = document.getElementById('txt5').textContent;
+var txt6 = document.getElementById('txt6').textContent;
+var txt7 = document.getElementById('txt7').textContent;
+var txt8 = document.getElementById('txt8').textContent;
+var txt9 = document.getElementById('txt9').textContent;
+var txt10 = document.getElementById('txt10').textContent;
+var txxxt = [txt1, txt2, txt3, txt4, txt5, txt6, txt7, txt8, txt9, txt10];
 
 window.addEventListener('click',
   function(event) {
@@ -123,7 +123,7 @@ function Circle(x, y, radius, hue, txxt) {
     for (let i = 0; i < circles.length; i++) {
       if (this === circles[i]) continue;
       if (distance(this.x, this.y, circles[i].x, circles[i].y) - radius * 2 < 0) {
-        resolveCollision(this, circles[i])
+        resolveCollision(this, circles[i]);
       }
 
     }
@@ -136,7 +136,7 @@ function Circle(x, y, radius, hue, txxt) {
 
 
     if (this.radius > maxRadius - 5) {
-      this.text = drawTxt(this.txxt, this.x, this.y)
+      this.text = drawTxt(this.txxt, this.x, this.y);
     }
 
     if (mouse.x - this.x < 15 && mouse.x - this.x > -15 && mouse.y - this.y < 15 && mouse.y - this.y > -15) {
@@ -179,7 +179,7 @@ function init() {
       for (let j = 0; j < circles.length; j++) {
         if (distance(x, y, circles[j].x, circles[j].y) - radius * 2 < 0) {
           x = Math.random() * innerWidth;
-          x = Math.random() * innerHeight
+          x = Math.random() * innerHeight;
 
           j = -1;
         }
